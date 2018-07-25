@@ -2,6 +2,5 @@
 **Projeto Block**
 ===================
 
-----------
 
-	Jogo para aplicação de padrões de projeto e uso do padrão arquitetural Microkernel.
+	Game for application of design patterns and use of the Microkernel architectural standard.

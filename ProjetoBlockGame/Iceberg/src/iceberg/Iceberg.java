@@ -1,12 +1,16 @@
 
 package iceberg;
 
-import interfaces.core.IBackground;
-import interfaces.core.IBlocks;
-import interfaces.core.IGround;
-import interfaces.core.IUIFactor;
+import templates.*;
 
-public class Iceberg  implements IUIFactor {
+public class Iceberg implements IBlockFactory {
+
+    private String nome = "Ice";
+    
+    @Override
+    public IChao createChao() {
+        return new Chao();
+    }
 
     @Override
     public IBackground createBackground() {
@@ -14,14 +18,8 @@ public class Iceberg  implements IUIFactor {
     }
 
     @Override
-    public IGround createGround() {
-        return new Ground();
+    public IBlocos createBlocos() {
+        return new Blocos();
     }
-
-    @Override
-    public IBlocks createBlocks() {
-        return new Blocks();
-    }
-
 
 }
